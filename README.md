@@ -1,4 +1,4 @@
-# [Gamemakin](https://gamemak.in) UE4 Style Guide Version 2() {
+# Monokkel's Unreal Style Guide
 
 # THIS IS A DRAFT
 
