@@ -137,7 +137,7 @@ An `Identifier` is anything that resembles or serves as a "name". For example, t
 <a name="terms-cases"></a>
 ##### Cases
 
-There are a few different ways you can `CaseWordsWhenNaming`. Here are some common casing types:
+PascalCase is preferred for most things. There are a few different ways you can `CaseWordsWhenNaming`. Here are some common casing types:
 
 > ###### PascalCase
 >
@@ -174,7 +174,7 @@ When in the context of a class, it is often used to convey discussion about its 
 These principles have been adapted from [idomatic.js style guide](https://github.com/rwaldron/idiomatic.js/).
 
 <a name="0.1"></a>
-### 0.1 If your UE4 project already has a style guide, you should follow it
+### 0.1 If your Unreal project already has a style guide, you should follow it
 
 If you are working on a project or with a team that has a pre-existing style guide, it should be respected.  Any inconsistency between an existing style guide and this guide should defer to the existing.
 
@@ -184,7 +184,7 @@ Style guides should be living documents. You should propose style guide changes 
 > [_Rebecca Murphey_](https://rmurphey.com)
 
 <a name="0.2"></a>
-### 0.2 All structure, assets, and code in any Unreal Engine 4 project should look like a single person created it, no matter how many people contributed
+### 0.2 All structure, assets, and code in any Unreal Engine project should look like a single person created it, no matter how many people contributed
 
 Moving from one project to another should not cause a re-learning of style and structure. Conforming to a style guide removes unneeded guesswork and ambiguities.
 
@@ -216,8 +216,6 @@ Gamemakin LLC is not a lawyer, but please don't introduce illegal actions and be
 
 <a name="00"></a>
 ## 00. Globally Enforced Opinions
-
-@TODO: Make this section 1 and update this document accordingly. Or maybe we don't?
 
 <a name="00.1"></a>
 ### 00.1 Forbidden Characters
@@ -310,11 +308,11 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Level (Gameplay)        |            | _Gameplay  |                                  |
 | Blueprint               | BP_        |            |                                  |
 | Material                | M_         |            |                                  |
-| Static Mesh             | S_         |            | Many use SM_. We use S_.         |
+| Static Mesh             | SM_         |           | Like Epic. Allar uses S_         |
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
-| Widget Blueprint        | W_         |            |                                  |
+| Widget Blueprint        | W_         |            | Like Epic. Allar uses WBP.       |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
@@ -363,7 +361,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Blueprint Component     | BP_        | Component  | I.e. BP_InventoryComponent       |
 | Blueprint Function Library | BPFL_   |            |                                  |
 | Blueprint Interface     | BPI_       |            |                                  |
-| Blueprint Macro Library | BPML_      |            | Do not use macro libraries if possible. |
+| Blueprint Macro Library | BPML_      |            |                                  |
 | Enumeration             | E          |            | No underscore.                   |
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
@@ -427,7 +425,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Camera Anim                | CA_        |            |                                  |
 | Color Curve                | Curve_     | _Color     |                                  |
 | Curve Table                | Curve_     | _Table     |                                  |
-| Data Asset                 | *_         |            | Prefix should be based on class. |
+| Primary Data Asset         | PDA_       |            |                                  |
+| Data Asset                 | DA_*_      |            | * Determined by name of PDA      |
 | Data Table                 | DT_        |            |                                  |
 | Float Curve                | Curve_     | _Float     |                                  |
 | Foliage Type               | FT_        |            |                                  |
@@ -1422,6 +1421,9 @@ See [LICENSE](/LICENSE)
 
 ## Amendments
 
-* Changed widget prefix from WBP_ to W_ to confirm with Epic's new standards
+* Changed widget prefix from WBP_ to W_ to conform with Epic's new standards
+* Changed static mesh prefix from S_ to SM_ to conform with Epic.
+* Removed warning about blueprint macro libraries. They have their uses.
+* Added prefix for primary data asset. Updated prefix for data assets.
 
 # };
