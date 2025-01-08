@@ -2,10 +2,6 @@
 
 This is a style guide is based on Allar's UE5 style guide. It seeks to keep consistent styling with Epic whenever this is practical, and also covers styling for my own custom plugins and third party software that I use in my projects
 
-## Repo Notice
-
-This repo is now located at https://github.com/Allar/ue5-style-guide. The default branch of this repository has been renamed `main`.
-
 ## Table of contents
 - [Important Terminology](#important-terminology)
   - [Levels/Maps](#terms-level-map)
@@ -318,7 +314,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Skeletal Mesh           | SK_        |            |                                  |
 | Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
-| Widget Blueprint        | WBP_       |            |                                  |
+| Widget Blueprint        | W_         |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
@@ -371,7 +367,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Enumeration             | E          |            | No underscore.                   |
 | Structure               | F or S     |            | No underscore.                   |
 | Tutorial Blueprint      | TBP_       |            |                                  |
-| Widget Blueprint        | WBP_       |            |                                  |
+| Widget Blueprint        | W_         |            |                                  |
 
 <a name="anc-materials"></a>
 <a name="1.2.5"></a>
@@ -498,7 +494,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Font                    | Font_      |            |                                  |
 | Slate Brush             | Brush_     |            |                                  |
 | Slate Widget Style      | Style_     |            |                                  |
-| Widget Blueprint        | WBP_       |            |                                  |
+| Widget Blueprint        | W_         |            |                                  |
 
 <a name="anc-effects"></a>
 <a name="1.2.12"></a>
