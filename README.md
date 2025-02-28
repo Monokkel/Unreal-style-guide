@@ -373,7 +373,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 | Asset Type                    | Prefix     | Suffix     | Notes                            |
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
-| Material                      | M_         |            |                                  |
+| Material                      | M_         | _Parent*   | *Only if any material instances are based off it  |
 | Material (Post Process)       | PP_        |            |                                  |
 | Material Function             | MF_        |            |                                  |
 | Material Instance             | MI_        |            |                                  |
